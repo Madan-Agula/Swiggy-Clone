@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build" : "npm i && npm build",
-    "start": "nodemon server.js",
+    "build": "npm i",
+    "start": "npm run build && nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
