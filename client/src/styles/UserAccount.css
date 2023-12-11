@@ -1,0 +1,70 @@
+.user-account {
+    background-color: #37718e;
+    min-height: 100vh;
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .user-header {
+    padding-top: 33px;
+    position: relative;
+  }
+  
+  .user-details {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .user-logout {
+    border: 1px solid hsla(0, 100%, 87%, 0.6);
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+  }
+  
+  .user-logout:hover {
+    background-color: #ff0000 !important;
+    color: #fff;
+  }
+  
+  .user-name {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .user-email {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .user-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .user-section-1 {
+    min-width: 260px;
+    background: #edf1f7;
+  }
+  
+  .user-link {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .user-link:hover {
+    background-color: #ddd;
+  }
+  

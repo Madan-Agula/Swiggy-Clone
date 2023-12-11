@@ -1,0 +1,161 @@
+*{
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+Link{
+  display: none;
+  text-decoration: none;
+}
+#navBar-container{
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 3px 8px #d3d3d3;
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.img-icon123{
+   font-size: 3rem;
+  color: orange;
+}
+
+.field-name{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+#cart-items {
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+}
+#cart-items1{
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  background-color: #60b246;
+  color:#fff
+}
+
+#links-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  color:rgba(0, 0, 0, 0.692)
+}
+
+#links-container a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.692)
+}
+
+.items-conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.items-conatiner div{
+margin-left: 5px;
+font: 500;
+}
+.icons{
+  width:20px;
+  height: 25px;
+}
+
+.items-conatiner:hover{
+  color: orange;
+  cursor: pointer;
+}
+
+#foodcard-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+#foodcard-container a{
+  text-decoration: none;
+}
+
+.search-container{
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shimmer-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+@media screen and (max-width: 980px){
+  .img-icon123{
+      font-size: 3rem;
+ }
+ .items-conatiner .field-name{
+  margin-left: 2px;
+  font-weight: 600;
+  margin-right:3px;
+  font-size: 14px;
+ }
+ #links-container{
+  width: 87%;
+}
+.icons{
+  width:15px;
+  height: 16px;
+  margin-top: 2px;
+}
+.shimmer-container {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+#cart-items {
+  min-width: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+#cart-items1{
+  min-width: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 12px;
+}
+}

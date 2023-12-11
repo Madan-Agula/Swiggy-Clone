@@ -1,0 +1,172 @@
+.menu-card{
+    width:63%;
+    margin: 100px auto;
+    background-color: #ffff;
+    min-height: 300px;
+}
+
+.shim-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.restuarant-details{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.restuarant-name{
+    width: 48%;
+    height: 100px;
+}
+.rating-container1234{
+    width: 37%;
+    display: flex;
+    justify-content: flex-end;
+}
+.res-rating{
+    width: 70px;
+    height: 70px;
+    border:1px solid #e9e9eb;
+    border-radius: 10%;
+    margin-top: 6px;
+    border: 1px solid #7e808c;
+}
+
+#avgrating{
+    margin-top:8px ;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #60b246;;
+    font-size: 14px;
+}
+.time-container{
+    margin-left: 3%;
+}
+
+.icon1{
+    color: #60b246;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+#rating{
+    margin-left: 5.8px;
+    font-size: 11px;
+    margin-top: 7px;
+}
+.hrating{
+    margin: 0;
+    width: 55px;
+    margin-left: 8px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+.cuisines{
+    font-size: 13px;
+    color: #7e808c;
+}
+
+.locality{
+    font-size: 13px;
+    color: #7e808c;
+}
+
+.distance{
+    font-size: 16px;
+    color: #7e808c;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.mddelivery{
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.dash{
+    border: none;
+      border-top: 1px dashed #000; 
+      margin: 20px 0;
+}
+
+.timendcurr{
+    margin-right: 6px;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.time{
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.recommended{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.border{
+    height: 16px;
+    border-bottom: 16px solid #f1f1f6 !important;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 980px){
+    
+    .restuarant-details{
+        width: 100%;
+        min-height: 100px;
+        margin-right: 4px;
+    }
+    .restuarant-name{
+        min-width: 200px;
+        height: 100px;
+    }
+    .locality{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 17px;
+    }
+    .distance{
+        font-size: 13px;
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+   
+    .time{
+        font-size: 13px;
+    }
+    
+    .mddelivery{
+        font-size: 18px;
+        margin-bottom: 3px;
+        margin-right: 3px;
+    }
+    .timendcurr{
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .recommended{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+}
