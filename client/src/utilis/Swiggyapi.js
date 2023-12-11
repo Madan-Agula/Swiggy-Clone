@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 const SWIGGY_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/"
-const RESTAURANTS_API = "https://swiggy-clone-backend-server.onrender.com/";
-
+const RESTAURANTS_API = "http://localhost:8080/";
+//const RESTAURANTS_API = "https://swiggy-clone-backend-server.onrender.com/";
 
 function useAllRestaurantsData(){
     const [allResData,setAllResData] = useState(null);
