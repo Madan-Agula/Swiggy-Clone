@@ -1,14 +1,14 @@
-import React from 'react';
-import ErrorBody from '../src/components/ErrorBody'
-import Body from '../src/components/Body'
+import React, { Suspense } from 'react';
+const ErrorBody = React.lazy(()=>import('../src/components/ErrorBody'))
+const Body = React.lazy(()=>import('../src/components/Body'))
 import "./App.css";
-import Offers from '../src/components/Offers'
-import MenuList from '../src/components/MenuList'
-import Cart from '../src/components/Cart'
+const Offers = React.lazy(()=>import('../src/components/Offers'))
+const MenuList =  React.lazy(()=>import('../src/components/MenuList'))
+const Cart =  React.lazy(()=>import('../src/components/Cart'))
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import Home  from '../src/components/Home';
-import UserAccount from './components/UserAccount';
+const Home = React.lazy(()=>import('../src/components/Home'));
+const UserAccount = React.lazy(()=> import('./components/UserAccount'));
 
 const App = () => {
   const userDetails = useSelector((store) => store.userDetails.data);
@@ -16,27 +16,27 @@ const App = () => {
   {
     path:'/',
     element:<Home/>,
-    errorElement:<ErrorBody/>,
+    errorElement:<Suspense><ErrorBody/></Suspense>,
     children :[
       {
         path:'/',
-       element:<Body/>,
+       element:<Suspense><Body/></Suspense>,
       },
       {
           path:"/offers",
-          element:<Offers/>
+          element:<Suspense><Offers/></Suspense>
       },
       {
         path:"/restuarant-menu/:name/:id",
-        element : <MenuList/>
+        element : <Suspense><MenuList/></Suspense>
       },
       {
         path:"/checkout",
-        element:userDetails !== null ? <Cart/> : <Body/>
+        element:userDetails !== null ?<Suspense> <Cart/></Suspense> : <Suspense><Body/></Suspense>
       },
       {
         path:"/account",
-        element:userDetails!==null ? <UserAccount/> :""
+        element:userDetails!==null ? <Suspense><UserAccount/></Suspense> :""
       }
     ]
   }
