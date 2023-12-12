@@ -1,12 +1,13 @@
 import React, { Suspense } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import "./App.css";
+
 const ErrorBody = React.lazy(()=>import('../src/components/ErrorBody'))
 const Body = React.lazy(()=>import('../src/components/Body'))
-import "./App.css";
 const Offers = React.lazy(()=>import('../src/components/Offers'))
 const MenuList =  React.lazy(()=>import('../src/components/MenuList'))
 const Cart =  React.lazy(()=>import('../src/components/Cart'))
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 const Home = React.lazy(()=>import('../src/components/Home'));
 const UserAccount = React.lazy(()=> import('./components/UserAccount'));
 

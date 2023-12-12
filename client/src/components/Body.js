@@ -5,6 +5,8 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link, useOutletContext } from "react-router-dom";
 import { useAllRestaurantsData } from "../utilis/Swiggyapi";
+import "../App.css";
+
 
 const Body = () => {
   const { show, showSeachBar } = useOutletContext();
