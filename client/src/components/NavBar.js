@@ -11,6 +11,7 @@ import { verifyjwtToken } from "../utilis/loginApi";
 import { removeUser } from "../utilis/userSlice";
 import { Navbar, Nav, Dropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import "../App.css";
 
 const NavBar = ({ showSeachBar }) => {
   const cartItem = useSelector((store) => store.cart.item);

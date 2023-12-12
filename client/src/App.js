@@ -1,15 +1,14 @@
-import React, { Suspense } from 'react';
+import React from 'react';
+import ErrorBody from '../src/components/ErrorBody'
+import Body from '../src/components/Body'
+import "./App.css";
+import Offers from '../src/components/Offers'
+import MenuList from '../src/components/MenuList'
+import Cart from '../src/components/Cart'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import "./App.css";
-
-const ErrorBody = React.lazy(()=>import('../src/components/ErrorBody'))
-const Body = React.lazy(()=>import('../src/components/Body'))
-const Offers = React.lazy(()=>import('../src/components/Offers'))
-const MenuList =  React.lazy(()=>import('../src/components/MenuList'))
-const Cart =  React.lazy(()=>import('../src/components/Cart'))
-const Home = React.lazy(()=>import('../src/components/Home'));
-const UserAccount = React.lazy(()=> import('./components/UserAccount'));
+import Home  from '../src/components/Home';
+import UserAccount from './components/UserAccount';
 
 const App = () => {
   const userDetails = useSelector((store) => store.userDetails.data);
@@ -17,27 +16,27 @@ const App = () => {
   {
     path:'/',
     element:<Home/>,
-    errorElement:<Suspense><ErrorBody/></Suspense>,
+    errorElement:<ErrorBody/>,
     children :[
       {
         path:'/',
-       element:<Suspense><Body/></Suspense>,
+       element:<Body/>,
       },
       {
           path:"/offers",
-          element:<Suspense><Offers/></Suspense>
+          element:<Offers/>
       },
       {
         path:"/restuarant-menu/:name/:id",
-        element : <Suspense><MenuList/></Suspense>
+        element : <MenuList/>
       },
       {
         path:"/checkout",
-        element:userDetails !== null ?<Suspense> <Cart/></Suspense> : <Suspense><Body/></Suspense>
+        element:userDetails !== null ? <Cart/> : <Body/>
       },
       {
         path:"/account",
-        element:userDetails!==null ? <Suspense><UserAccount/></Suspense> :""
+        element:userDetails!==null ? <UserAccount/> :""
       }
     ]
   }
