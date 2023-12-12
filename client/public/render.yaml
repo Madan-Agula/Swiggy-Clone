@@ -1,0 +1,4 @@
+ redirects:
+   - sourcePath: "/*"
+     destinationPath: "/index.html"
+    type: 200
