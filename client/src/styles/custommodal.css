@@ -38,3 +38,36 @@ font-size: 14px;
     color:#ffff;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 600px){
+
+    .modal-container12{
+        width:280px;
+        height: 200px;
+      }
+      .header{
+      font-weight: bold;
+      font-size:15px ;
+      }
+      .para{
+      font-size: 12px;
+      }
+      
+      .login-btn12{
+          width:100px;
+          min-height:50px;
+          background-color: #ffff;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #60b246;
+          color: #60b246;
+          transition: bottom 0.3s ease;
+      }
+      .t212{
+          font-weight: 400;
+      }
+      
+
+}
