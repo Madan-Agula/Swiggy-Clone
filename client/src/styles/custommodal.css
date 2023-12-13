@@ -1,73 +1,75 @@
-
-.modal-container12{
-  width:480px;
-  height: 200px;
-  padding: 25px;
-  box-sizing: border-box;
-}
-.header{
-font-weight: bold;
-font-size:19px ;
-margin-bottom: 8px;
-}
-.para{
-font-size: 14px;
-}
-.btn-container12{
-    display:flex;
+.modal-container12 {
+    width: 480px;
+    height: 200px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+  
+  .para {
+    font-size: 14px;
+  }
+  
+  .btn-container12 {
+    display: flex;
     margin-top: 16px;
-}
-
-.login-btn12{
-    width:200px;
-    min-height:50px;
+  }
+  
+  .login-btn12 {
+    width: 200px;
+    min-height: 50px;
     background-color: #ffff;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid #60b246;
     color: #60b246;
     transition: bottom 0.3s ease;
-}
-.t212{
+  }
+  
+  .t212 {
     font-weight: 500;
-}
-.signin12{
+  }
+  
+  .signin12 {
     background: #60b246;
-    color:#ffff;
+    color: #ffff;
     margin-left: 20px;
-}
-
-@media screen and (max-width: 600px){
-
-    .modal-container12{
-        width:280px;
-        height: 200px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .modal-container12 {
+        width: 280px;
+        height: auto;
+        padding: 15px;
+        margin: 0 auto;
       }
-      .header{
+  
+    .header {
       font-weight: bold;
-      font-size:15px ;
-      }
-      .para{
-      font-size: 12px;
-      }
+      font-size: 15px;
+    }
+  
+ 
+  
+    .btn-container12 {
+      flex-wrap: wrap;
       
-      .login-btn12{
-          width:100px;
-          min-height:50px;
-          background-color: #ffff;
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid #60b246;
-          color: #60b246;
-          transition: bottom 0.3s ease;
-      }
-      .t212{
-          font-weight: 400;
-      }
-      
-
-}
+    }
+  
+    .login-btn12 {
+      width: 100px;
+      margin-right: 10px; /* Add some spacing between buttons */
+    }
+  
+    .t212 {
+      font-weight: 400;
+    }
+  }
+  
