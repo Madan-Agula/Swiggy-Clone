@@ -1,1 +1,1 @@
-PLAY DEMO : https://swiggy-clone-madan-agula.firebaseapp.com
+PLAY DEMO : swiggy-clone-by-madan.firebaseapp.com
