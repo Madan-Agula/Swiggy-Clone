@@ -43,6 +43,7 @@ const NavBar = ({ showSeachBar }) => {
 
   function logout(){
     dispatch(removeUser())
+    localStorage.removeItem("user");
     navigate('/')
   }
 
