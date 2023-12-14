@@ -13,6 +13,7 @@ const UserAccount = () => {
 
   function logout() {
     dispatch(removeUser());
+    localStorage.removeItem("user");
     navigate("/");
   }
 
